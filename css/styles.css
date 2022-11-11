@@ -21,6 +21,7 @@ font-family: 'Roboto', sans-serif;
     --white-color: #ffffff;
     --header-borderline: #ECECEC;
     --works-borderline: #eeeeee;
+    --clients-border-color: #AFB1B8;
 }
 
 body {
@@ -307,11 +308,47 @@ img {
 }
 
 .team-text {
+    margin-bottom: 16px;
     text-align: center;
 
     font-size: 16px;
     line-height: 1.9;
     color: var(--secondary-text-color);
+}
+
+.team-social-networks {
+    display: flex;
+    gap: 10px;
+}
+
+.social-networks-wrap {
+    width: 44px;
+    height: 44px;
+    padding: 12px;
+    border-radius: 50%;
+}
+
+.social-networks-icon {
+    fill: currentColor;
+}   
+
+/* Clients */
+
+.clients-list {
+    display: flex;
+    gap: 30px;
+}
+
+.clients-list > .item {
+    height: 92px;
+    flex-basis: calc((100% - 150px) / 6);
+    padding: 16px 32px;
+    border: 1px solid var(--clients-border-color);
+    border-radius: 4px;
+}
+
+.client-icon {
+
 }
 
 /* Footer */
@@ -359,6 +396,10 @@ img {
 .address-link:hover,
 .address-link:focus {
     color: var(--accent-color)
+}
+
+.footer-flex {
+    display: flex;
 }
 
 /* PAGE PORTFOLIO */
