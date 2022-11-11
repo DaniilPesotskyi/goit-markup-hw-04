@@ -231,6 +231,19 @@ img {
     flex-basis: calc((100% - 90px) / 4);
 }
 
+.benefits-icon-wrap {
+    width: 270px;
+    height: 120px;
+    padding: 25px 100px;
+    margin-bottom: 30px;
+    background-color: var(--secondary-bg-color)
+}
+
+.benefits-icon {
+    width: 70px;
+    height: 70px;
+}
+
 .benefits-title {
     font-size: 14px;
     line-height: 1.14;
