@@ -140,12 +140,14 @@ img {
     gap: 50px;
 }
 
-.contact-smartphone-mail {
+.contact-mail-icon {
     margin-right: 10px;
+    color: var(--secondary-text-color);
 }
 
 .contact-smartphone-icon {
     margin-right: 10px;
+    color: var(--secondary-text-color);
 }
 
 .contacts-link {    
@@ -162,6 +164,7 @@ img {
 .contacts-link:hover,
 .contacts-link:focus {
     color: var(--accent-color);
+    fill: var(--accent-color);
 }
 
 .current {
@@ -340,11 +343,19 @@ img {
     height: 44px;
     padding: 12px;
     border-radius: 50%;
+
+    fill: var(--clients-border-color);
 }
 
-.social-networks-icon {
-    fill: currentColor;
-}   
+
+
+.social-networks-wrap:hover,
+.social-networks-wrap:focus {
+    background-color: var(--accent-color);
+    fill: var(--primary-bg-color);
+}
+
+
 
 /* Clients */
 
@@ -358,11 +369,14 @@ img {
     flex-basis: calc((100% - 150px) / 6);
     padding: 16px 32px;
     border: 1px solid var(--clients-border-color);
+    fill: var(--clients-border-color);
     border-radius: 4px;
 }
 
-.client-icon {
-
+.clients-list > .item:hover,
+.clients-list > .item:focus {
+    border: 1px solid var(--accent-color);
+    fill: var(--accent-color);
 }
 
 /* Footer */
@@ -440,10 +454,12 @@ img {
     padding: 12px;
     border-radius: 50%;
     background-color: rgba(255, 255, 255, 0.1);
+    fill: var(--primary-bg-color);
 }
 
-.footer-social-icon {
-
+.footer-social-wrap:hover,
+.footer-social-wrap:focus {
+    background-color: var(--accent-color);
 }
 
 .footer-flex {
