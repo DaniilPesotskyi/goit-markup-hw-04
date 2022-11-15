@@ -440,7 +440,6 @@ img {
 
 .footer-social-title {
     display: inline-block;
-    margin-top: 12px;
     margin-bottom: 20px;
 
     font-weight: 700;
@@ -474,6 +473,7 @@ img {
 
 .footer-flex {
     display: flex;
+    align-items: baseline;
 }
 
 /* PAGE PORTFOLIO */
@@ -517,12 +517,13 @@ img {
     gap: 30px;
 }
 
-.works-list > .item {
+.work-link {
+    display: block;
     flex-basis: calc((100% - 60px) / 3);
 }
 
-.works-list>.item:hover,
-.works-list>.item:focus {
+.work-link:hover,
+.work-link:focus {
     box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
 }
 
